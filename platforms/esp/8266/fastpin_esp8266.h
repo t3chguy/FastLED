@@ -96,6 +96,11 @@ _DEFPIN_ESP8266(8,15); _DEFPIN_ESP8266(9,3); _DEFPIN_ESP8266(10,1);
 
 #endif
 
+// Remember to test if HSPI is actually invoked
+#define SPI_DATA 13
+#define SPI_CLOCK 14
+
 #define HAS_HARDWARE_PIN_SUPPORT
+// copied from https://github.com/m0bygit/FastLED-ESP8266/blob/master/platforms/xtensa/esp8266/fastpin_xtensa_esp8266.h
 
 #define FASTLED_NAMESPACE_END
